@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <title>Image Slider</title>
+</head>
+<body>
+    <div class="content">
+        <div class="images">
+            <img src="bg1.jpg" alt="">
+            <img src="bg2.jpg" alt="">
+            <img src="bg3.jpg" alt="">
+            <img src="bg4.jpg" alt="">
+            <img src="bg5.jpg" alt="">
+        </div>
+
+        <div onclick="side_slide(-1)" class="slide left">
+            <span class="fas fa-angle-left"></span>
+        </div>
+
+        <div onclick="side_slide(1)" class="slide right">
+            <span class="fas fa-angle-right"></span>
+        </div>
+
+        <div class="btn-sliders">
+            <span onclick="btn_slide(1)"></span>
+            <span onclick="btn_slide(2)"></span>
+            <span onclick="btn_slide(3)"></span>
+            <span onclick="btn_slide(4)"></span>
+            <span onclick="btn_slide(5)"></span>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
